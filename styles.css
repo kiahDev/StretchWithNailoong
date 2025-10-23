@@ -95,6 +95,7 @@ button.toggle-btn:hover {
     transform: scale(1.03);
     background-color: gray;
     color: white;
+    cursor: pointer;
 }
 
 button.toggle-btn:active {
