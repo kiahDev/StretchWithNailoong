@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d6d6d6;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 450px; 
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.header {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 18px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    border: 1px solid black;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #4caf50;
+    transition: width 1s linear;
+}
+
+img.gif {
+    width: 70%; 
+    max-width: 300px; 
+    height: auto;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.main p.types {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    color: red;
+}
+
+.types.fade {
+    opacity: 0;
+}
+
+.timer h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.timer p.clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+button.toggle-btn {
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button.toggle-btn:hover {
+    transform: scale(1.03);
+    background-color: gray;
+    color: white;
+}
+
+button.toggle-btn:active {
+    transform: scale(0.90);
+    background-color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    img.gif {
+        width: 90%; 
+        margin: 15px 0;
+    }
+
+    .main p.types {
+        font-size: 1rem;
+    }
+
+    .timer p.clock {
+        font-size: 1.2rem;
+    }
+
+    button.toggle-btn {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}
